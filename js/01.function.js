@@ -114,12 +114,35 @@ sum(10, 20, function(r){
 	console.log("10 더하기 20 은 " + r + " 입니다.");
 });
 
+// 움직여/원위치
+// $("객체").stop().animate({}, 1000, "swing | linear", function(){});
 
-
-
-
+$("#bt10").click(function(){
+	var target = $("#img3").parent().width() - $("#img3").width();
+	$("#img3").stop().animate({"left": target + "px"}, 2000, function(){
+		$(this).css("opacity", 0.5);
+	});
+});
+$("#bt11").click(function(){
+	$("#img3").stop().animate({"left": 0}, 2000, function(){
+		$(this).css("opacity", 1);
+	});
+});
 
 /*
+reservation('booldook', 'c4', function(err){
+	if(err) alert()
+	else {
+		asdklfjkasdfj
+	}
+})
+
+function reservation(id, num, cb) {
+	//....
+	if(pay) cb();
+	else cb(err);
+}
+
 var jQuery = function(str){
 	this = new Array();
 	this[0] = document.querySelector(str);
