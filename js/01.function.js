@@ -19,3 +19,18 @@ $("#bt6").click(function(){
 $("#bt7").click(function(){
 	$("#img1").stop().slideToggle(500);
 });
+
+/************** Vanila Script / ES5 *****************/
+document.getElementById("bt8");	// $("#bt8")
+document.getElementsByClassName("btn");	// $(".btn")
+document.getElementsByTagName("button");	// $("button")
+document.querySelector("#bt8");
+document.querySelector(".btn");
+document.querySelector("button");
+
+console.log(	$("#bt8")[0]	);
+console.log(	$(document.getElementById("bt8"))	);
+
+document.querySelector("#bt8").addEventListener("click", function(){
+	console.log("hi~~~~");
+});
