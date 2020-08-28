@@ -32,5 +32,27 @@ console.log(	$("#bt8")[0]	);
 console.log(	$(document.getElementById("bt8"))	);
 
 document.querySelector("#bt8").addEventListener("click", function(){
-	console.log("hi~~~~");
+	document.querySelector("#img2").style.display = "none";
 });
+
+document.querySelector("#bt9").addEventListener("click", function(){
+	document.querySelector("#img2").style.display = "";
+});
+
+/*
+var document = {
+	querySelector: function(str){
+		return this.getElementById(str);
+	},
+	style: {
+		display: 'block'
+	}
+}
+var a = ['A', 'B'];
+var b = {
+	x: 10,
+	y: 20
+};
+console.log(b.x);
+console.log(b.y);
+*/
