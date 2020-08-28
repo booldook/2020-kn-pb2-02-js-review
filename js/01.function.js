@@ -56,3 +56,31 @@ var b = {
 console.log(b.x);
 console.log(b.y);
 */
+
+
+/********** 변수, 함수, 배열, 객체 ***********/
+/********** 변수(variable) ***********/
+// var a = '?'
+// primittive type: 숫자(Number), 문자(String), 불린(Boolean), null, undefined
+// reference type : 배열(Array), 객체(Object)
+var a;
+if(a) console.log(a);
+
+var a = 1;
+if(a) console.log(a);
+
+var a = '1';
+if(a) console.log(a);
+
+var a = true;
+if(a) console.log(a);
+
+var a = null; // 빈값
+if(a) console.log(a);
+
+// console.clear();
+
+// false == 0, '', null, undefined
+if(a) {
+	console.log("Hi~");
+}
