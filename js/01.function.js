@@ -78,9 +78,54 @@ if(a) console.log(a);
 var a = null; // 빈값
 if(a) console.log(a);
 
-// console.clear();
 
 // false == 0, '', null, undefined
 if(a) {
 	console.log("Hi~");
 }
+
+
+/********** 함수(function) ***********/
+console.clear();
+
+// 함수선언문 - Hoisting(끌어올리다)
+b();
+function b() {
+	console.log('B');
+}
+
+// 함수표현식
+var c = function(){
+	console.log('C');
+}
+c();
+
+// 함수의 인자(Arguments)
+function d(x, y) {
+	x * y;
+}
+
+function sum(x, y, cb) {
+	var hap = x + y;
+	cb(hap);
+}
+
+sum(10, 20, function(r){
+	console.log("10 더하기 20 은 " + r + " 입니다.");
+});
+
+
+
+
+
+
+/*
+var jQuery = function(str){
+	this = new Array();
+	this[0] = document.querySelector(str);
+	this.prototype.click = function(fn){
+		fn();
+	}
+	return this;
+}
+*/

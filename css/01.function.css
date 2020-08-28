@@ -1,2 +1,6 @@
 body {height: 10000px;}
 #img2 {width: 800px;}
+
+#img3-wrap {position: relative;}
+#img3 {position: absolute; width: 300px; top: 0; left: 0;} 
+/* left: calc(100% - 300px) */
