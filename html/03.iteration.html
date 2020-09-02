@@ -40,4 +40,34 @@
 	// 1. 나이가 40세 이상인 회원을 찾으시오. var user40 = [...]
 	// 2. 각 객체에 변수 avg를 등록하고 국어와 영어의 평균을 넣으시오.
 	// 3. 국어와 영어의 평균이 70점 이상인 회원을 찾으시오. var user70 = [...]
+	
+	// 1번 풀이
+	/* var user40 = [];
+	for(var i in users) {
+		if(users[i].age >= 40) user40.push(users[i]);
+	} */
+	var user40 = users.filter(function(v){
+		return v.age < 40;
+	});
+	console.log(user40);
+
+	// 2번 풀이
+	/* for(var i in users) {
+		users[i].avg = ( users[i].kor + users[i].eng ) / 2;
+	} */
+	var users = users.map(function(v){
+		v.avg = (v.kor + v.eng) / 2;
+		return v;
+	});
+	console.log(users);
+
+	// 3번 풀이
+	/* var user70 = [];
+	for(var i in users) {
+		if(users[i].avg >= 70) user70.push(users[i]);
+	} */
+	var user70 = users.filter(function(v){
+		return v.avg >= 70;
+	});
+	console.log(user70);
 </script>
