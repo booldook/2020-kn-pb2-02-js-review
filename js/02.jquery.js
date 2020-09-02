@@ -30,3 +30,10 @@ var Human = {
 		// 메서드
 	}
 } */
+
+
+$(".list").find("img").click(function(){
+	var src = $(this).attr("src");	// Getter
+	$(".img-big").attr("src", src);	// Setter
+});
+$(".list").eq(0).find("img").trigger("click");
