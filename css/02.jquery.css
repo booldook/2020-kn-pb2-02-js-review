@@ -5,5 +5,5 @@
 .list:hover {opacity: 1;}
 .list:hover > img {transform: scale(1.2);}
 
-.alert {max-width: 466px; margin: 8px auto;}
-.stage {border: 8px solid #54b8fa; display: inline-block; }
+.title {max-width: 466px; margin: 8px auto;}
+.stage {border: 8px solid #54b8fa; display: inline-block;}

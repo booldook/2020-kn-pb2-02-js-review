@@ -31,8 +31,19 @@ var Human = {
 	}
 } */
 
+var titles = [
+	'체리',
+	'크로와상',
+	'와인',
+	'스테이크',
+	'연어구이',
+	'샌드위치',
+	'아이스크림'
+];
 
 $(".list").find("img").click(function(){
+	var idx = $(this).parent().index();
+	$(".title").text(titles[idx]);
 	var src = $(this).attr("src");	// Getter
 	//$(".img-big").attr("src", src);	// Setter
 	$(".img-big").stop().animate({"opacity": 0}, 300, function(){
