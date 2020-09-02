@@ -19,3 +19,12 @@ $("#bt6").click(function(){
 $("#bt7").click(function(){
 	$("#img1").stop().slideToggle(500);
 });
+
+
+
+
+
+
+
+
+
