@@ -9,6 +9,11 @@ function fx() {
 }
 fx();
 
+// 연산자
+// +=    a = a + 5  ==>  a += 5
+// ++    a = a + 1  ==>  a++
+// --    a = a - 1  ==>  a--
+
 
 
 
@@ -30,9 +35,10 @@ for(var i in lists) {
 	html 	= '<div class="list m-2">';
 	html += '<img src="'+lists[i].src+'" class="w-100">';
 	html += '</div>';
-	// $(".lists").append(html);
-	$(html).appendTo(".lists").click(onListClick);
+	$(".lists").append(html);
+	// $(html).appendTo(".lists").click(onListClick);
 }
+$(".list").click(onListClick);
 $(".list").eq(0).trigger("click");
 
 /**************** 이벤트 콜백 *****************/
@@ -51,3 +57,45 @@ function onListClick() {
 
 
 /**************** DOM 컨트롤 *****************/
+$("#html").click(onHtml);
+$("#append").click(onAppend);
+$("#appendTo").click(onAppendTo);
+$("#prepend").click(onPrepend);
+$("#prependTo").click(onPrependTo);
+$("#remove").click(onRemove);
+$("#empty").click(onEmpty);
+
+function onHtml() {
+	var inner = 'ABCDEF';
+	var html = '<div title="'+inner+'">'+inner+'</div>';
+	console.log(html);
+	$(".test").html(html);
+}
+function onAppend() {
+	var inner = 'GHIJK';
+	var html = '<div title="'+inner+'">'+inner+'</div>';
+	$(".test").append(html); 
+}
+function onAppendTo() {
+	var inner = 'GHIJK';
+	var html = '<div title="'+inner+'">'+inner+'</div>';
+	$(html).appendTo(".test");
+}
+function onPrepend() {
+	var inner = 'GHIJK';
+	var html = '<div title="'+inner+'">'+inner+'</div>';
+	$(".test").prepend(html); 
+}
+function onPrependTo() {
+	var inner = 'GHIJK';
+	var html = '<div title="'+inner+'">'+inner+'</div>';
+	$(html).prependTo(".test"); 
+}
+function onRemove() {
+	// 대상을 삭제한다.
+	$(".test").remove();
+}
+function onEmpty() {
+	// 대상의 안에 있는 태그를 삭제
+	$(".test").empty();
+}
