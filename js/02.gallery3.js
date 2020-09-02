@@ -30,16 +30,24 @@ for(var i in lists) {
 	html 	= '<div class="list m-2">';
 	html += '<img src="'+lists[i].src+'" class="w-100">';
 	html += '</div>';
-	$(".lists").append(html);
+	// $(".lists").append(html);
+	$(html).appendTo(".lists").click(onListClick);
+}
+$(".list").eq(0).trigger("click");
+
+/**************** 이벤트 콜백 *****************/
+function onListClick() {
+	var idx = $(this).index();
+	$(".title").text(lists[idx].title);
+	$(".img-big").stop().animate({"opacity": 0}, 200, function(){
+		$(this).attr("src", lists[idx].src).stop().animate({"opacity": 1}, 200);
+	});
 }
 
+
+/**************** 이벤트 선언 *****************/
 
 /**************** 사용자 함수 *****************/
 
 
-
-/**************** 이벤트 콜백 *****************/
-
-
-
-/**************** 이벤트 선언 *****************/
+/**************** DOM 컨트롤 *****************/
