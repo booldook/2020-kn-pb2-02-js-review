@@ -4,6 +4,7 @@
 - $("CSS 선택자")
 - eq(n), index()
 - parent(), children(), find()
+- each()
 
 ## DOM 관련
 - append(), appendTo(), prepend(), prependTo(), html(), text()
