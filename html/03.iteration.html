@@ -17,5 +17,27 @@
 		{ name: "홍길윤", age: 59, kor: 50, eng: 80 },
 		{ name: "홍길석", age: 22, kor: 90, eng: 90 },
 		{ name: "홍길숙", age: 34, kor: 100, eng: 85 },
-	]
+	];
+
+	for(var i=0; i<users.length; i++) {
+		// console.log(users[i]);
+	}
+
+	for(var i in users) {
+		// console.log(users[i].name);
+	}
+
+	// ES6 추가된 for~of => 아직은 쓸 수 없다.
+	for(var v of users) {
+		// console.log(v.name);
+	}
+
+	users.forEach(function(v, i){
+		// console.log(users[i].name);
+		// console.log(v.name);
+	});
+
+	// 1. 나이가 40세 이상인 회원을 찾으시오. var user40 = [...]
+	// 2. 각 객체에 변수 avg를 등록하고 국어와 영어의 평균을 넣으시오.
+	// 3. 국어와 영어의 평균이 70점 이상인 회원을 찾으시오. var user70 = [...]
 </script>
