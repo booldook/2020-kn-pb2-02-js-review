@@ -48,6 +48,6 @@ $(".list").find("img").click(function(){
 	//$(".img-big").attr("src", src);	// Setter
 	$(".img-big").stop().animate({"opacity": 0}, 300, function(){
 		$(this).attr("src", src).stop().animate({"opacity": 1}, 300);
-	})
+	});
 });
 $(".list").eq(0).find("img").trigger("click");
