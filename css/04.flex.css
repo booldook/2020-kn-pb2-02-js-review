@@ -1,4 +1,4 @@
-html, body {line-height: 1;}
+html, body {line-height: 1; height: 5000px;}
 ul, ol, li, p, div {list-style: none; margin: 0; padding: 0;}
 .clear::after {content: ""; display: block; clear: both;}
 
@@ -9,4 +9,14 @@ ul, ol, li, p, div {list-style: none; margin: 0; padding: 0;}
 
 .logo-wrap > .logo {margin-left: 12px;}
 .navi-wrap > .navi {padding: 0 12px;}
+	
+/*************** .box-wrap *****************/
+.box-wrap {height: 60vh; border: 10px solid red; font-size: 7vw; display: flex; justify-content: center; align-items: center;}
+.box-wrap > .box {border: 5px solid blue; text-align: center;}
 
+
+/*************** .box-wrap2 *****************/
+.box-wrap2 {display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap; 
+	flex-direction: column-reverse;
+	height: 70vh; border: 10px solid orangered;}
+.box-wrap2 > .box {background-color: darkcyan; border: 1px solid darkslategrey; font-size: 24px; color: #fff; padding: 12px; width: 100px;}
