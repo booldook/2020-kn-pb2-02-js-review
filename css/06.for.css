@@ -8,5 +8,5 @@ flex: flex-basis flex-grow flex-shrink
 .box {flex: 30px 0 0; height: 30px; border: 1px solid red; background-color: orange;}
 .box:nth-child(3) {align-self: center;} */
 
-.wrapper {display: flex; justify-content: start; align-items: start; max-width: 800px; height: 400px; margin: auto; border: 2px solid black; flex-wrap: nowrap; align-content: start; }
-.box {flex: 30px 0 0; height: 30px; border: 1px solid red; background-color: orange;}
+.wrapper {display: flex; flex-wrap: wrap;}
+.box {flex: 30px 0 0; height: 30px; border: 1px solid red; background-color: orange; transition: all 1s;}
