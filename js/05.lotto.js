@@ -23,6 +23,7 @@ function onFinder() {
 	numbers = _.shuffle(numbers);
 	for(var i=0; i<6; i++) selectedNumbers.push(numbers.pop());
 	selectedNumbers = selectedNumbers.sort(function(a, b) { return a - b });
+	// selectedNumbers = selectedNumbers.sort((a, b) => a - b);
 	// function(a, b) { return b - a } // 내림차순
 	for(var i in selectedNumbers) {
 		if(selectedNumbers[i] < 11) className = 'yellow';
