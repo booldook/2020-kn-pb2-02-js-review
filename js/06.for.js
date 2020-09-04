@@ -5,7 +5,7 @@ function onHover() {
 function onMaker() {
 	$(".wrapper").empty();
 	for(var i=0; i<2000; i++) {
-		$(".wrapper").append('<div class="box"></div>');
+		$(".wrapper").append('<div class="box">'+(i+1)+'</div>');
 	}
 	$(".box").mouseover(onHover);
 }
