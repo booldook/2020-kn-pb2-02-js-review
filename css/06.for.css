@@ -1,0 +1,7 @@
+/*  
+flex-grow: 0 (늘어나지 않는 상태)
+flex-shrink: 1 (줄어드는 상태)
+*/
+
+.wrapper {display: flex; justify-content: start; align-items: start; max-width: 800px; height: 400px; margin: auto; border: 2px solid black; flex-wrap: nowrap; align-content: start; }
+.box {width: 60px; height: 60px; border: 1px solid red; background-color: orange; flex-shrink: 1; flex-grow: 1;}
