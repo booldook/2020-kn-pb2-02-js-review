@@ -20,3 +20,11 @@ ul, ol, li, p, div {list-style: none; margin: 0; padding: 0;}
 .red {background: radial-gradient(circle at 30% 30%, #ffdcdc 5%, #ff2e2e 20%, #9c1212 50%, #2e0202 100% );}
 .grey {background: radial-gradient(circle at 30% 30%, #ffffff 5%, #a3a3a3 20%, #525252 50%, #000000 100% );}
 .green {background: radial-gradient(circle at 30% 30%, #e4ffdc 5%, #35ff11 20%, #1daa0a 50%, #062e02 100% );}
+
+
+@media screen and (max-width: 767px) {
+	.cont-wrapper {flex-direction: column;}
+	.cont-wrapper > div {width: 100%;}
+
+	.lt-wrap {border-right: none; border-bottom: 1px solid #c3e6cb; padding-bottom: 16px; margin-bottom: 16px;}
+}
