@@ -6,30 +6,22 @@ function onFoodClick() {
 }
 
 // 수학함수 관련
-Math.abs(-15);
-15
-Math.round(4.4);
-4
-Math.round(4.6);
-5
-Math.ceil(4.2);
-5
-Math.ceil(4.9);
-5
-Math.floor(4.2);
-4
-Math.floor(4.9);
-4
-Math.PI;
-3.141592653589793
-Math.random();
-0.31379055283817214
-Math.random();
-0.21904244116477978
-Math.random();
-0.6736894567464169
-Math.random();
-0.6134078546561301
+Math.min(1,2,3,4,5)								//	1
+Math.max(1,2,3,4,5)								//	5
+var scores = [1, 2, 3, 4, 5];
+Math.max(...scores);							//	5
+Math.abs(-15);										//	15
+Math.round(4.4);									//	4
+Math.round(4.6);									//	5
+Math.ceil(4.2);										//	5
+Math.ceil(4.9);										//	5
+Math.floor(4.2);									//	4
+Math.floor(4.9);									//	4
+Math.PI;													//	3.141592653589793
+Math.random();										//	0.31379055283817214
+Math.random();										//	0.21904244116477978
+Math.random();										//	0.6736894567464169
+Math.random();										//	0.6134078546561301
 Math.ceil(Math.random() * 8) - 1
 
 var mr = $(this).css("margin");		// Getter

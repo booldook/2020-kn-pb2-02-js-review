@@ -5,13 +5,18 @@ ul, ol, li, p, div {list-style: none; margin: 0; padding: 0;}
 .wrapper {max-width: 800px; margin: auto;}
 .cont-wrapper {height: calc(100vh - 58px); border: 1px solid #c3e6cb; display: flex;}
 .cont-wrapper > div {width: 50%; text-align: center;}
-.lt-wrap {border-right: 1px solid #c3e6cb;} 
+.lt-wrap {border-right: 1px solid #c3e6cb;}
+.rt-wrap {overflow-y: auto; height: 100%;} 
 #btFinder {margin: 30px 0;}
 
 .lotto-wrap {display: flex; justify-content: center; align-items: center;}
-.lotto {width: 50px; height: 50px; border-radius: 50%; font-weight: bold; display: flex; justify-content: center; align-items: center; font-size: 20px; color: #121212; margin: 5px;}
-.yellow {background: radial-gradient(circle at 30% 30%, #fff9dc 5%, #ffc711 20%, #aa850a 80%, #2e2402 100% );}
-.cyan {background: radial-gradient(circle at 30% 30%, #dcf7ff 5%, #11e3ff 20%, #0a7daa 80%, #02242e 100% );}
-.red {background: radial-gradient(circle at 30% 30%, #ffdcdc 5%, #ff2e2e 20%, #9c1212 80%, #2e0202 100% );}
-.grey {background: radial-gradient(circle at 30% 30%, #ffffff 5%, #a3a3a3 20%, #525252 80%, #000000 100% );}
-.green {background: radial-gradient(circle at 30% 30%, #e4ffdc 5%, #35ff11 20%, #1daa0a 80%, #062e02 100% );}
+.lotto-wrap .lotto {width: 50px; height: 50px; border-radius: 50%; font-weight: bold; display: flex; justify-content: center; align-items: center; font-size: 20px; color: #121212; margin: 5px;}
+
+.lotto-wrap2 {display: flex; justify-content: center; align-items: center;}
+.lotto-wrap2 .lotto {width: 40px; height: 40px; border-radius: 50%; font-weight: bold; display: flex; justify-content: center; align-items: center; font-size: 16px; color: #121212; margin: 4px;}
+
+.yellow {background: radial-gradient(circle at 30% 30%, #fff9dc 5%, #ffc711 20%, #aa850a 50%, #2e2402 100% );}
+.cyan {background: radial-gradient(circle at 30% 30%, #dcf7ff 5%, #11e3ff 20%, #0a7daa 50%, #02242e 100% );}
+.red {background: radial-gradient(circle at 30% 30%, #ffdcdc 5%, #ff2e2e 20%, #9c1212 50%, #2e0202 100% );}
+.grey {background: radial-gradient(circle at 30% 30%, #ffffff 5%, #a3a3a3 20%, #525252 50%, #000000 100% );}
+.green {background: radial-gradient(circle at 30% 30%, #e4ffdc 5%, #35ff11 20%, #1daa0a 50%, #062e02 100% );}
